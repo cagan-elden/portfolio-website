@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* banner css */
+.banner {
+    margin-top: -1em;
+    background-color: yellowgreen;
+    position:fixed;
+    width: 100%;
+}
+.banner .right {
+    float: right;
+}
+.banner .right ul li{
+    display: inline-block;
+    margin: 0.5em;
+}
+.banner .right ul li a{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: text-decoration 10s;
+}
+.banner .right ul li a:hover {
+    text-decoration: underline;
+}
