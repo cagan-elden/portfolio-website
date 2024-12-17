@@ -17,8 +17,10 @@ html,body {
 .banner {
     background-color: #333;
     position:fixed;
+    display: block;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 .banner .right {
@@ -40,11 +42,16 @@ html,body {
 
 /* content css */
 .content {
-    margin-top: 3em;
     background-color: #000;
-    height: 100vh;
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 93.25vh;
 }
 .content .main-header {
+    margin-top: 2.5em;
     text-align: center;
     padding: 0.5em;
 }
@@ -62,8 +69,12 @@ html,body {
 .footer {
     background-color: #222;
     height: 2.5em;
+    width: 100%;
     text-align: center;
     padding-top: 0.75em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .footer #link {
     margin-right: 0.5em;
