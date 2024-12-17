@@ -3,6 +3,16 @@ html,body {
     margin: 0;
 }
 
+/* animation */
+@keyframes writeFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* banner css */
 .banner {
     background-color: #333;
@@ -34,6 +44,35 @@ html,body {
     background-color: #000;
     height: 100vh;
 }
-.content h1{
-    color: whitesmoke;
+.content .main-header {
+    text-align: center;
+    padding: 0.5em;
+}
+.content h4{
+    font-family: 'Segoe UI';
+    color: ghostwhite;
+}
+.content h1 {
+    font-family: 'Segoe UI';
+    color: ghostwhite;
+    animation: ease 1s;
+}
+
+/* footer css */
+.footer {
+    background-color: #222;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 0.75em;
+}
+.footer #link {
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+.footer #link:hover #social-media{
+    width: 1.75em;
+}
+.footer #link #social-media {
+    width: 1.5em;
+    transition: width 0.5s;
 }
