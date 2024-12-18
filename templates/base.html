@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çağan ELDENK - {%  %}</title>
+    <title>Çağan ELDENK - {% block title %}{% endblock %}</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -20,16 +20,8 @@
     </div>
 
     <div class="content">
-        <div class="main-header">
-            <h4>Hello, I'm Cagan. A highschool student Software Engineer.</h4>
-            <h1>Python & PHP <span style="color: royalblue">developer</span></h1>
 
-            <div class="main">
-                <button class="btn-m" id="cv">Download <b>CV</b></button>
-                <button class="btn-m">Contact Me</button>
-            </div>
-    
-        </div>
+        {% block content %}{% endblock %}
 
         <div class="footer">
             <a href="https://github.com/cagan-elden" id="link">
