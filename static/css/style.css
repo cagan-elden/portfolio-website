@@ -43,17 +43,19 @@ html,body {
 /* content css */
 .content {
     background-color: #000;
-    display: block;
-    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 93.25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .content .main-header {
     margin-top: 2.5em;
     text-align: center;
     padding: 0.5em;
+    display: block;
 }
 .content h4{
     font-family: 'Segoe UI';
@@ -63,6 +65,22 @@ html,body {
     font-family: 'Segoe UI';
     color: ghostwhite;
     animation: ease 1s;
+}
+/* content main css */
+.main .btn-m {
+    background-color: #000;
+    border: 1px solid #ccc;
+    color: aliceblue;
+    padding: 0.6em;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border-radius: 0.25em;
+    transition: box-shadow 0.3s;
+    margin-right: 0.5em;
+}
+.main .btn-m:hover {
+    box-shadow: #888 1px 1px 1px 1px;
 }
 
 /* footer css */
