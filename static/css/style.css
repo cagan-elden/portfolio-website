@@ -46,7 +46,7 @@ html,body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 93.25vh;
+    padding-top: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +83,52 @@ html,body {
     box-shadow: #888 1px 1px 1px 1px;
 }
 
+.main #main-title {
+    font-family: 'Segoe UI';
+    color: ghostwhite;
+}
+.main #def-text {
+    font-family: verdana;
+    font-size: 12px;
+    color: aliceblue;
+    display: block;
+    margin: 2.5em;
+    width: 50em;
+}
+.main #company {
+    list-style: none;
+    display: inline-block;
+}
+.main #company-logo {
+    width: 7.5em;
+    transition: 0.5s;
+}
+.main #company-logo:hover {
+    width: 8em;
+}
+.main ul {
+    width: 40em;
+}
+.main #lang {
+    list-style: none;
+    display: inline-block;
+    margin: 0.5em;
+}
+.icon-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main #lang #lang-img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    transition: 0.5s;
+}
+.main #lang #lang-img:hover {
+    height: 5.5em;
+}
+
 /* footer css */
 .footer {
     background-color: #222;
@@ -90,7 +136,7 @@ html,body {
     width: 100%;
     text-align: center;
     padding-top: 0.75em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
 }

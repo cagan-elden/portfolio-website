@@ -1,3 +1,68 @@
-<div class="about">
-    
+{% extends 'base.html' %}
+{% block title %} About {% endblock %}
+{% block content %}
+<div class="main" style="text-align: center;">
+    <!-- About Me -->
+    <h2 id="main-title">About Me</h2>
+    <span id="def-text">Hi, I am Cagan, a <b>backend developer</b> based in Izmir. I have been passionate about <b>computer science</b> since I was a kid.</span>
+    <span id="def-text">I am still a higschool student in Izmir Tevfik Fikret Science Highschool. When my parents first got me a laptop when I was nine years old, I wondered how computers and the internet work. So through internet I learnt how to code and after five years of building projects, got my first job at HODX where I started my professional career as an intern.</span>
+
+    <!-- Skills -->
+    <h2 id="main-title">Skills</h2>
+    <span id="def-text">For the past six years of my career; I have mastered <b>web development</b> and <b>web applications</b>.</span>
+
+    <ul>
+        <li id="lang">
+            <img src="{{ url_for('static', filename='img/html.svg') }}" id="lang-img">
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/css.svg') }}" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper" style=" border-radius: 0.5em;">
+                <img src="{{ url_for('static', filename='img/javascript.svg') }}" style="width: 4em;" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/php.svg') }}" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/csharp.svg') }}" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/python.svg') }}" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/postgresql.svg') }}" id="lang-img">
+            </div>
+        </li>
+        <li id="lang">
+            <div class="icon-wrapper">
+                <img src="{{ url_for('static', filename='img/mysql.svg') }}" id="lang-img">
+            </div>
+        </li>
+    </ul>
+
+    <!-- Experience -->
+    <h2 id="main-title">Professional Experiences</h2>
+
+    <ul>
+        <li id="company">
+            <a href="https://hodx.ai/" target="_blank">
+                <img src="{{ url_for('static', filename='img/hodx.png') }}" id="company-logo">
+            </a>
+        </li>
+    </ul>
+
+    <button class="btn-m" id="experience" style="margin-bottom: 5em;">View Experience</button>
 </div>
+{% endblock %}
